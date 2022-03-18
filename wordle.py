@@ -113,11 +113,12 @@ def potential_words_freq(guessed_word, curr_state, window_df):
 
     return new_window_df
     
-def game(actual_word, initial_guess, window):
+def game(actual_word, initial_guess):
     count = 1
-    words = pd.read_csv('window.csv')
-    window = words
+    words = pd.read_csv('guess_list.csv')
+    window = pd.read_csv('window.csv')
     guessed_word = initial_guess
+    return_guess(guessed_word)
     while(True):
         if (count > 6):
             count = 7
@@ -142,6 +143,7 @@ def game(actual_word, initial_guess, window):
                 print(possible_chars)
             else:
                 guessed_word = window[window.freq == max(window.freq)]['words'][0]
+                return_guess(guessed_word)
         count +=1
 
     return count
@@ -184,3 +186,7 @@ def four_green(possible_chars, window_df, words_df):
             max = count
             rec_word = w
     return rec_word 
+
+def return_guess(guessed_word):
+    #reflect guess on page abhi chil nil time
+    print('word guessed: ', guessed_word)
