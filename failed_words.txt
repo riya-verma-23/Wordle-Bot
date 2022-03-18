@@ -1,0 +1,50 @@
+//SLATE//
+
+success %:  0.9922212618841832
+slate 3.8560933448573897
+
+mammy
+mower
+panel
+power
+roger
+rover
+rower
+savvy
+shave
+stash
+stunk
+super
+taunt
+tight
+vaunt
+wafer
+watch * 
+waver
+
+//LEAST//
+success %:  0.9904926534140017
+least:  3.8902333621434746
+
+jaunt
+jolly
+mammy
+mower
+patch
+right
+roger
+rover
+rower
+shave
+taunt
+tight
+vaunt
+verve
+wafer
+waive
+waste
+watch
+waver
+wight
+worse
+wound
