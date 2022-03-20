@@ -156,7 +156,7 @@ def simulate_all_games(initial_guess):
     total = 0
     for i in range(len(df)):
         actual_word = df['words'][i]
-        count = game(actual_word, initial_guess, df)
+        count = game(actual_word, initial_guess)
         if count <= 6:
             success+=1
         else:
